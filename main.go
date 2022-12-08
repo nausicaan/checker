@@ -9,7 +9,7 @@
 package main
 
 import (
-	I "go/check/workers"
+	I "check/workers"
 	"os"
 )
 
