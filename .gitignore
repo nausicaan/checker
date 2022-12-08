@@ -1,0 +1,29 @@
+*.gem
+*.rbc
+*.log
+*.work
+.DS_Store
+/.config
+/coverage/
+InstalledFiles
+/bin/
+/logs/
+/pkg/
+/spec/
+/test/
+/temp/
+/.vscode/
+
+## Used by dotenv library to load environment variables.
+*.env
+
+## Documentation cache and generated files:
+/.yardoc/
+/_yardoc/
+/doc/
+/rdoc/
+
+## Environment normalization:
+/.bundle/
+/vendor/bundle
+/lib/bundler/man/
