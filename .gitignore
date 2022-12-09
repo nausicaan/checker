@@ -1,13 +1,11 @@
 *.gem
 *.rbc
-*.log
 *.work
 .DS_Store
 /.config
 /coverage/
 InstalledFiles
 /bin/
-/logs/
 /pkg/
 /spec/
 /test/
