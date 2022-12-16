@@ -1,0 +1,17 @@
+{
+    "name": "checker",
+    "version": "1.0.0",
+    "description": "Go program for WordPress plugin update checks",
+    "main": "main.go",
+    "scripts": {
+        "start": "go run main.go"
+    },
+    "keywords": [
+        "go",
+        "golang",
+        "checker"
+    ],
+    "license": "GPL",
+    "dependencies": {
+    }
+}
