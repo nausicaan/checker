@@ -6,12 +6,16 @@ import (
 	"os"
 )
 
+const (
+	flag, server, path, site = "-p", "coeurl.dmz", "/data/www-app/test_blog_gov_bc_ca/current/web/wp", "test.blog.gov.bc.ca"
+)
+
 var short = []string{tmp, grp, web}
 
 // Plugin triggers the related functions
 func Plugin() {
 	if contains() {
-		Logging("Plugin update triggered on " + os.Args[4])
+		Logging("Plugin update triggered on " + site)
 		ups := wpcli("plugin", "list", "--update=available")
 		body := freebies(ups) + assemble()
 		if len(body) > 0 {
@@ -29,7 +33,7 @@ func Plugin() {
 
 // Theme triggers the related functions
 func Theme() {
-	Logging("Themes update triggered on " + os.Args[4])
+	Logging("Themes update triggered on " + site)
 	ups := wpcli("theme", "list", "--update=available")
 	body := freebies(ups) + assemble()
 	fmt.Print(body)
@@ -37,7 +41,7 @@ func Theme() {
 
 // Core triggers the related functions
 func Core() {
-	Logging("Core update triggered on " + os.Args[4])
+	Logging("Core update triggered on " + site)
 	ups := wpcli("wp", "core", "check-update")
 	body := freebies(ups)
 	fmt.Print(body)

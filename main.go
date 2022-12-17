@@ -10,26 +10,26 @@ package main
 
 import (
 	I "check/workers"
-	"os"
 )
 
 // Launch the program and execute according to the supplied flag
 func main() {
-	argLength := len(os.Args)
-	if argLength == 5 {
-		choice := os.Args[1]
-		switch choice {
-		case "-p":
-			I.Plugin()
-		case "-t":
-			I.Theme()
-		case "-c":
-			I.Core()
-		default:
-			I.Logging("Incorrect flag detected - program halted")
-		}
-		I.Logging("Program exited without errors")
-	} else {
-		I.Logging("Insufficient arguments supplied - program halted")
-	}
+	I.Plugin()
+	// argLength := len(os.Args)
+	// if argLength == 5 {
+	// 	choice := os.Args[1]
+	// 	switch choice {
+	// 	case "-p":
+	// 		I.Plugin()
+	// 	case "-t":
+	// 		I.Theme()
+	// 	case "-c":
+	// 		I.Core()
+	// 	default:
+	// 		I.Logging("Incorrect flag detected - program halted")
+	// 	}
+	// 	I.Logging("Program exited without errors")
+	// } else {
+	// 	I.Logging("Insufficient arguments supplied - program halted")
+	// }
 }

@@ -14,7 +14,7 @@ const (
 // Test if the server value passed to the program is on the list
 func contains() bool {
 	for _, v := range servers {
-		if v == os.Args[2] {
+		if v == server {
 			return true
 		}
 	}
@@ -37,14 +37,13 @@ func trouble(err error) {
 
 // Run the Linux mail command and email the result to the configured recipent(s)
 func mailman(list string) {
-	url := os.Args[4]
-	cmd := exec.Command("mail", "-s", "WordPress updates for "+url, "-r", "Delivery Cactuar <"+sender+">", recipient)
+	cmd := exec.Command("mail", "-s", "WordPress updates for "+site, "-r", "Delivery Cactuar <"+sender+">", recipient)
 	stdin, err := cmd.StdinPipe()
 	trouble(err)
 
 	go func() {
 		defer stdin.Close()
-		_, err := io.WriteString(stdin, "Below is the current list of plugins requiring updates for "+url+". Have a magical day!\n\n"+list)
+		_, err := io.WriteString(stdin, "Below is the current list of plugins requiring updates for "+site+". Have a magical day!\n\n"+list)
 		trouble(err)
 	}()
 
