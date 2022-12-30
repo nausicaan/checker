@@ -46,8 +46,6 @@ func current(p string) string {
 func latest(u, g string) string {
 	rtnByte(exec.Command("curl", "-s", u, "-o", web))
 	grep := rtnByte(exec.Command("grep", g, web))
-	// err := os.WriteFile(grp, grep, 0666)
-	// trouble(err)
 	trouble(os.WriteFile(grp, grep, 0666))
 	head := rtnByte(exec.Command("head", "-n 1", grp))
 	return regmatch(strings.TrimSpace(string(head)))

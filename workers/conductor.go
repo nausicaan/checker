@@ -7,7 +7,7 @@ import (
 )
 
 const (
-	flag, server, path, site = "-p", "coeurl.dmz", "/data/www-app/test_blog_gov_bc_ca/current/web/wp", "test.blog.gov.bc.ca"
+	server, path, site = "coeurl.dmz", "/data/www-app/test_blog_gov_bc_ca/current/web/wp", "test.blog.gov.bc.ca"
 )
 
 var short = []string{tmp, grp, web}
