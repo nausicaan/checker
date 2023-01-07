@@ -6,7 +6,7 @@
 WordPress Update Checker (WUC), runs the standard `wp plugin list --update=available` command as well as some custom searches to grab those hard to find updates.
 
 ## How to Run
-**$** `wuc *\<server\>*.dmz \<path\> \<site\>`
+**$** `wuc <server>.dmz <path> <site>`
 
 Example:
 
