@@ -1,9 +1,9 @@
 /*
 - WUC -- WordPress Update Checker
 - Author: Byron Stuike
-- Release Date: 2022-10-11
-- go build -o /Users/byron/Documents/bitbucket/operations/bin/wpc main.go
-- GOOS=linux GOARCH=amd64 go build -o /Users/byron/Documents/bitbucket/operations/bin/wpc main.go
+- Release Date: 2023-01-06
+- go build -o /Users/byron/Documents/git/checker/bin/mwpc main.go
+- GOOS=linux GOARCH=amd64 go build -o /Users/byron/Documents/git/checker/bin/lwpc main.go
 */
 
 package main
