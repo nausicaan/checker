@@ -7,6 +7,10 @@ WordPress Plugin Update Checker (wpp-check), runs the standard `wp plugin list -
 
 ![output](images/output.png)
 
+## Prerequisite
+
+Googles' [Go language](https://go.dev) installed locally to enable building executables from source code.
+
 ## Build
 
 From the folder containing *main.go*, use the command that matches your environment:
