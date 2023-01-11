@@ -17,19 +17,27 @@ From the folder containing *main.go*, use the command that matches your environm
 
 Mac:
 
-    go build -o {build_location}/wpp-check main.go
+```shell
+go build -o {build_location}/wpp-check main.go
+```
 
 Linux:
 
-    GOOS=linux GOARCH=amd64 go build -o {build_location}/wpp-check main.go
+```shell
+GOOS=linux GOARCH=amd64 go build -o {build_location}/wpp-check main.go
+```
 
 ## Run
 
-    ./wpp-check {server}.dmz {WordPress_path} {site}
+```shell
+./wpp-check {server}.dmz {WordPress_path} {site}
+```
 
 Example:
 
-    ./wpp-check coeurl.dmz /data/www-app/test_blog_gov_bc_ca/current/web/wp test.blog.gov.bc.ca
+```shell
+./wpp-check coeurl.dmz /data/www-app/test_blog_gov_bc_ca/current/web/wp test.blog.gov.bc.ca
+```
 
 ## License
 Code is under Version 3.0 of the [GNU General Public License](https://github.com/nausicaan/checker/blob/main/LICENSE.md).
