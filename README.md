@@ -5,7 +5,17 @@
 ## About
 WordPress Plugin Update Checker (wpp-check), runs the standard `wp plugin list --update=available` command as well as some custom searches to grab those hard to find updates.
 
-![output](images/output.png)
+```console
+Below is the current list of plugins requiring updates for test.blog.gov.bc.ca. Have a magical day!
+
+wpackagist-plugin/gutenberg:14.8.2
+wpackagist-plugin/stackable-ultimate-gutenberg-blocks:3.6.3
+wpackagist-plugin/styles-and-layouts-for-gravity-forms:4.3.10
+wpackagist-plugin/tablepress:2.0.1
+bcgov-plugin/events-calendar-pro:6.0.5.1
+bcgov-plugin/event-tickets-plus:5.6.4
+bcgov-plugin/gravityforms:2.6.8.2
+```
 
 ## Prerequisite
 
@@ -17,25 +27,25 @@ From the folder containing *main.go*, use the command that matches your environm
 
 Mac:
 
-```shell
+```bash
 go build -o {build_location}/wpp-check main.go
 ```
 
 Linux:
 
-```shell
+```bash
 GOOS=linux GOARCH=amd64 go build -o {build_location}/wpp-check main.go
 ```
 
 ## Run
 
-```shell
+```bash
 ./wpp-check {server}.dmz {WordPress_path} {site}
 ```
 
 Example:
 
-```shell
+```bash
 ./wpp-check coeurl.dmz /data/www-app/test_blog_gov_bc_ca/current/web/wp test.blog.gov.bc.ca
 ```
 
