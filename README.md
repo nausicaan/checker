@@ -6,7 +6,7 @@
 WordPress Plugin Update Checker (wpp-check), runs the standard `wp plugin list --update=available` command as well as some custom searches to grab those hard to find updates.
 
 ```console
-Below is the current list of plugins requiring updates for test.blog.gov.bc.ca. Have a magical day!
+Below is the current list of plugins requiring updates for test.blog.gov.bc.ca.
 
 wpackagist-plugin/gutenberg:14.8.2
 wpackagist-plugin/stackable-ultimate-gutenberg-blocks:3.6.3
@@ -28,19 +28,19 @@ From the folder containing *main.go*, use the command that matches your environm
 Mac:
 
 ```bash
-go build -o {build_location}/wpp-check main.go
+go build -o <build_location>/wpp-check main.go
 ```
 
 Linux:
 
 ```bash
-GOOS=linux GOARCH=amd64 go build -o {build_location}/wpp-check main.go
+GOOS=linux GOARCH=amd64 go build -o <build_location>/wpp-check main.go
 ```
 
 ## Run
 
 ```bash
-./wpp-check {server}.dmz {WordPress_path} {site}
+./wpp-check <server>.dmz <WordPress_path> <site>
 ```
 
 Example:
