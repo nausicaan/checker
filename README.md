@@ -25,11 +25,11 @@ Linux:
 
 ## Run
 
-    ./{path_to_file}/wpp-check {server}.dmz {WordPress_path} {site}
+    ./wpp-check {server}.dmz {WordPress_path} {site}
 
 Example:
 
-    .~/Documents/git/premium/wpp-check coeurl.dmz /data/www-app/test_blog_gov_bc_ca/current/web/wp test.blog.gov.bc.ca
+    ./wpp-check coeurl.dmz /data/www-app/test_blog_gov_bc_ca/current/web/wp test.blog.gov.bc.ca
 
 ## License
 Code is under Version 3.0 of the [GNU General Public License](https://github.com/nausicaan/checker/blob/main/LICENSE.md).
