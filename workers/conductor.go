@@ -49,7 +49,7 @@ func Core() {
 
 // Logging records a message to the log file
 func Logging(message string) {
-	file, err := os.OpenFile("/myfiles/wpc.log", os.O_APPEND|os.O_CREATE|os.O_WRONLY, 0644)
+	file, err := os.OpenFile("logs/wpp.log", os.O_APPEND|os.O_CREATE|os.O_WRONLY, 0644)
 	trouble(err)
 	log.SetOutput(file)
 	log.Println(message)

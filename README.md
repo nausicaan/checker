@@ -1,9 +1,6 @@
-# Check for WordPress Plugin Updates
+# WordPress Plugin Update Checker
 
-![banner](images/banner.jpg)
-
-## About
-WordPress Plugin Update Checker (wpp-check), runs the standard `wp plugin list --update=available` command as well as some custom searches to grab those hard to find updates.
+Runs the standard `wp plugin list --update=available` command as well as some custom searches to grab those hard to find updates.
 
 ```console
 Below is the current list of plugins requiring updates for test.blog.gov.bc.ca.
@@ -28,25 +25,25 @@ From the folder containing *main.go*, use the command that matches your environm
 Mac:
 
 ```bash
-go build -o <build_location>/wpp-check main.go
+go build -o <build_location>/<program_name> main.go
 ```
 
 Linux:
 
 ```bash
-GOOS=linux GOARCH=amd64 go build -o <build_location>/wpp-check main.go
+GOOS=linux GOARCH=amd64 go build -o <build_location>/<program_name> main.go
 ```
 
 ## Run
 
 ```bash
-./wpp-check <server>.dmz <WordPress_path> <site>
+./<program_name> <server>.dmz <WordPress_path> <site>
 ```
 
 Example:
 
 ```bash
-./wpp-check coeurl.dmz /data/www-app/test_blog_gov_bc_ca/current/web/wp test.blog.gov.bc.ca
+./wp-check coeurl.dmz /data/www-app/test_blog_gov_bc_ca/current/web/wp test.blog.gov.bc.ca
 ```
 
 ## License
